@@ -4,7 +4,7 @@ $.validator.setDefaults({
     validClass: "is-valid",     // class khi input đúng
     errorElement: "div",        // thẻ chứa message
     errorPlacement: function (error, element) {
-        error.addClass("invalid-feedback"); // message style Bootstrap
+        error.addClass("text-danger"); // message style Bootstrap
         if (element.parent(".input-group").length) {
             error.insertAfter(element.parent());
         } else if (element.is(":checkbox")) {
